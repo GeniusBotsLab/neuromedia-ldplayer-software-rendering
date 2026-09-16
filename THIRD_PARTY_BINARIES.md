@@ -1,10 +1,8 @@
-# Third-party Mesa binaries: distribution boundary
+# Included verified Mesa binaries
 
-The original private bundle contained six Windows DLL files reporting `Mesa 21.3.1` / `llvmpipe`: three x86 and three x64 files. They are **intentionally not committed** to this public repository.
+This repository includes the six Mesa 21.3.1 Windows DLL files required by `install.ps1`. They were verified byte-for-byte against the official `pal1000/mesa-dist-win` GitHub release asset `mesa3d-21.3.1-release-msvc.7z`.
 
-The supplied bundle did not contain a licence notice, an official distributor URL, or a reproducible build record for those exact binaries. A public repository must not redistribute opaque third-party binaries without documented provenance and applicable licence notices.
-
-To use this installer, obtain compatible Mesa Windows binaries from a source that provides the required licence and attribution information, verify their hashes, then place these files in the following layout:
+The exact provenance, asset hash, individual file hashes, original upstream README, and the `pal1000/mesa-dist-win` MIT license are preserved under [`third_party/pal1000-mesa-dist-win/`](third_party/pal1000-mesa-dist-win/).
 
 ```text
 mesa/x86/opengl32.dll
@@ -15,4 +13,4 @@ mesa/x64/libgallium_wgl.dll
 mesa/x64/libglapi.dll
 ```
 
-Mesa itself is an open-source project with its own licensing documentation: <https://docs.mesa3d.org/license.html>. This link does not identify the provenance of any particular prebuilt Windows DLL.
+Do not replace these files with arbitrary DLLs. If an update is needed, record the official upstream source, asset hash, per-file hashes and applicable notices before publishing it.
