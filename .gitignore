@@ -1,0 +1,7 @@
+# Do not publish third-party DLL binaries without documented provenance and licence notices.
+mesa/
+*.dll
+install.log
+*.zip
+*.7z
+.env

@@ -1,0 +1,10 @@
+# Example manifest format. Replace each placeholder with the SHA-256 of a verified,
+# lawfully obtained binary before use. Do not treat this file as a source of binaries.
+# <sha256>  mesa/x86/opengl32.dll
+# <sha256>  mesa/x86/libgallium_wgl.dll
+# <sha256>  mesa/x86/libglapi.dll
+# <sha256>  mesa/x64/opengl32.dll
+# <sha256>  mesa/x64/libgallium_wgl.dll
+# <sha256>  mesa/x64/opengl32.dll
+# <sha256>  mesa/x64/libgallium_wgl.dll
+# <sha256>  mesa/x64/libglapi.dll
